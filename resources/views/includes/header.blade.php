@@ -11,11 +11,11 @@
     </div>
     <div class="bottom-header">
         <div class="container p-2">
-            <a href="#" class="me-3"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc-logo"></a>
+            <a href="{{route('home')}}" class="me-3"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc-logo"></a>
             <nav class="h-100">
                 <ul class="h-100">
                     @foreach ( $menus as $menu )
-                        <li class="me-3 h-100"><a class="h-100" href="#">{{ strtoupper($menu) }}</a></li>                        
+                        <li class="me-3 h-100"><a class="h-100" href="{{route($menu)}}">{{ strtoupper($menu) }}</a></li>                        
                     @endforeach
                 </ul>
             </nav>
